@@ -1,0 +1,12 @@
+1. Lớp nào nên triển khai interface Comparable?
+
+Lớp Media nên được thiết kế để triển khai interface Comparable.
+2. Phương thức compareTo() nên được triển khai như thế nào trong lớp này?
+
+Phương thức compareTo() trong lớp Media cần được triển khai sao cho phản ánh thứ tự sắp xếp mong muốn. Chi tiết cách triển khai phương thức này có thể tham khảo trong tệp Media.java.
+3. Liệu có thể có nhiều quy tắc sắp xếp khác nhau khi sử dụng Comparable không?
+
+Không, interface Comparable chỉ hỗ trợ một quy tắc sắp xếp duy nhất, thường được gọi là thứ tự tự nhiên của các đối tượng. Vì vậy, nếu cần nhiều quy tắc sắp xếp, bạn không thể làm điều đó chỉ với Comparable.
+4. Nếu DVD cần một quy tắc sắp xếp khác, bạn sẽ làm gì?
+
+Trong trường hợp các đối tượng DVD cần sắp xếp theo một quy tắc khác (ví dụ: theo tiêu đề, tiếp đến là chiều dài giảm dần, rồi đến chi phí), bạn có thể ghi đè phương thức compareTo() trong lớp Disc (lớp con của Media) để triển khai quy tắc sắp xếp này.
